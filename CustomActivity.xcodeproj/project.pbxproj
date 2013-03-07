@@ -18,6 +18,8 @@
 		B3DE2D9D16E8120500B45E81 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B3DE2D9C16E8120500B45E81 /* Default-568h@2x.png */; };
 		B3DE2DA016E8120500B45E81 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3DE2D9E16E8120500B45E81 /* MainStoryboard.storyboard */; };
 		B3DE2DA316E8120500B45E81 /* MLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DE2DA216E8120500B45E81 /* MLViewController.m */; };
+		B3DE2DAA16E8122000B45E81 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DE2DA916E8122000B45E81 /* QuartzCore.framework */; };
+		B3DE2DAD16E8124D00B45E81 /* MLActivityIndicatorLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B3DE2DAC16E8124D00B45E81 /* MLActivityIndicatorLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,9 @@
 		B3DE2D9F16E8120500B45E81 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		B3DE2DA116E8120500B45E81 /* MLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MLViewController.h; sourceTree = "<group>"; };
 		B3DE2DA216E8120500B45E81 /* MLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLViewController.m; sourceTree = "<group>"; };
+		B3DE2DA916E8122000B45E81 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B3DE2DAB16E8124D00B45E81 /* MLActivityIndicatorLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLActivityIndicatorLayer.h; sourceTree = "<group>"; };
+		B3DE2DAC16E8124D00B45E81 /* MLActivityIndicatorLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLActivityIndicatorLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3DE2DAA16E8122000B45E81 /* QuartzCore.framework in Frameworks */,
 				B3DE2D8716E8120500B45E81 /* UIKit.framework in Frameworks */,
 				B3DE2D8916E8120500B45E81 /* Foundation.framework in Frameworks */,
 				B3DE2D8B16E8120500B45E81 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +79,7 @@
 		B3DE2D8516E8120500B45E81 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B3DE2DA916E8122000B45E81 /* QuartzCore.framework */,
 				B3DE2D8616E8120500B45E81 /* UIKit.framework */,
 				B3DE2D8816E8120500B45E81 /* Foundation.framework */,
 				B3DE2D8A16E8120500B45E81 /* CoreGraphics.framework */,
@@ -89,6 +96,8 @@
 				B3DE2DA116E8120500B45E81 /* MLViewController.h */,
 				B3DE2DA216E8120500B45E81 /* MLViewController.m */,
 				B3DE2D8D16E8120500B45E81 /* Supporting Files */,
+				B3DE2DAB16E8124D00B45E81 /* MLActivityIndicatorLayer.h */,
+				B3DE2DAC16E8124D00B45E81 /* MLActivityIndicatorLayer.m */,
 			);
 			path = CustomActivity;
 			sourceTree = "<group>";
@@ -177,6 +186,7 @@
 				B3DE2D9316E8120500B45E81 /* main.m in Sources */,
 				B3DE2D9716E8120500B45E81 /* MLAppDelegate.m in Sources */,
 				B3DE2DA316E8120500B45E81 /* MLViewController.m in Sources */,
+				B3DE2DAD16E8124D00B45E81 /* MLActivityIndicatorLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

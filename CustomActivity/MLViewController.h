@@ -10,4 +10,6 @@
 
 @interface MLViewController : UIViewController
 
+@property (nonatomic, weak) IBOutlet UIActivityIndicatorView *activityIndicator;
+
 @end

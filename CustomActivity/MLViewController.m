@@ -7,6 +7,7 @@
 //
 
 #import "MLViewController.h"
+#import "MLActivityIndicatorLayer.h"
 
 @interface MLViewController ()
 
@@ -16,14 +17,16 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
+  [super viewDidLoad];
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+  [_activityIndicator setTransform:CGAffineTransformMakeScale(5.0f, 5.0f)];
+  
+  MLActivityIndicatorLayer *activityLayer = [[MLActivityIndicatorLayer alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 150.0f, 150.0f)];
+  [activityLayer setPosition:[[self view] center]];
+  [activityLayer setBackgroundColor:[[UIColor blackColor] CGColor]];
+
+  
+  [[[self view] layer] addSublayer:activityLayer];
 }
 
 @end
