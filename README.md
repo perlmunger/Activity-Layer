@@ -1,7 +1,7 @@
 Activity Indicator Core Animation Layer
 ===================================
 
-The activity indicator provided by UIKit don't provide a lot of customization and if you need to enlarge them, they start to pixelate. The activity indicator Core Animation layer provides a way to create a layer that mimics the activity indicator view functionality, but allows you to set the colors to whatever you like and you can scale it to any size and it will still appear crisp around the edges.
+The activity indicator views provided by UIKit don't provide a lot of customization and if you need to enlarge them, they start to pixelate. The activity indicator Core Animation layer provides a way to create a layer that mimics the activity indicator view functionality, but allows you to set the colors to whatever you like and you can scale it to any size and it will still appear crisp around the edges.
 
 ![Black activity indicator layer](blackam.png)
 ![White activity indicator layer](whiteam.png)
