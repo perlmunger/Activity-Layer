@@ -27,7 +27,7 @@
 #define kDefaultTickCount       12
 #define kTickWidthRatio         0.08f
 #define kTickSizeRatio          0.25f
-#define kDefaultTickColor       [UIColor lightGrayColor]
+#define kDefaultTickColor       [UIColor darkGrayColor]
 #define kDefaultSwooshTickColor [UIColor whiteColor]
 
 + (id)layer
