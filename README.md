@@ -21,6 +21,10 @@ Here is how you use the code. To add it to a view controller,
   [activityLayer setPosition:[[self view] center]];
   [activityLayer setBackgroundColor:[[UIColor blackColor] CGColor]];
   
+  // Use some custom colors for the tick marks
+  [activityLayer setTickColor:[UIColor orangeColor]];
+  [activityLayer setSwooshTickColor:[UIColor yellowColor]];
+
   [[[self view] layer] addSublayer:activityLayer];
 }
 ```
