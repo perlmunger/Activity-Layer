@@ -37,9 +37,10 @@
   MLActivityIndicatorLayer *activityLayer = [[MLActivityIndicatorLayer alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 150.0f, 150.0f)];
   [activityLayer setPosition:[[self view] center]];
   [activityLayer setBackgroundColor:[[UIColor blackColor] CGColor]];
-  [activityLayer setTickColor:[UIColor orangeColor]];
-  [activityLayer setSwooshTickColor
-   :[UIColor yellowColor]];
+
+  // Use some custom colors for the tick marks
+//  [activityLayer setTickColor:[UIColor orangeColor]];
+//  [activityLayer setSwooshTickColor:[UIColor yellowColor]];
   
   [[[self view] layer] addSublayer:activityLayer];
 }
