@@ -6,6 +6,10 @@ The activity indicator views provided by UIKit don't provide a lot of customizat
 ![Black activity indicator layer](blackam.png)
 ![White activity indicator layer](whiteam.png)
 
+Or you can set the colors to your own custom ones.
+
+![Orange/yellow activity indicator layer](orangeam.png)
+
 Here is how you use the code. To add it to a view controller,
 
 ```

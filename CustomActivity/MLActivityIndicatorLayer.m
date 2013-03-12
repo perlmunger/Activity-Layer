@@ -46,6 +46,8 @@
   if (self) {
     [self setBounds:CGRectMake(0.0f, 0.0f, frame.size.width, frame.size.height)];
     [self setMasksToBounds:YES];
+    _ticks = [[NSMutableArray alloc] init];
+    _swooshTicks = [[NSMutableArray alloc] init];
     [self setTickCount:kDefaultTickCount];
     [self setTickColor:kDefaultTickColor];
     [self setSwooshTickColor:kDefaultSwooshTickColor];
@@ -69,6 +71,7 @@
     [tickLayer setTransform:transform];
     
     [self addSublayer:tickLayer];
+    [_ticks addObject:tickLayer];
   }
   
   _swooshLayer = [CALayer layer];
@@ -92,10 +95,23 @@
     [tickLayer setTransform:transform];
     
     [_swooshLayer addSublayer:tickLayer];
+    [_swooshTicks addObject:tickLayer];
   }
   [self addSublayer:_swooshLayer];
   [self startAnimating];
 
+}
+
+- (void)layoutSublayers
+{
+  for (CALayer *tickLayer in _ticks){
+    [tickLayer setBackgroundColor:[[self tickColor] CGColor]];
+  }
+  
+  for (CALayer *swooshTickLayer in _swooshTicks) {
+    [swooshTickLayer setBackgroundColor:[[self swooshTickColor] CGColor]];
+  }
+  
 }
 
 - (void)startAnimating

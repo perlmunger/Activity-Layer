@@ -28,6 +28,9 @@
 @property (nonatomic, strong) UIColor *tickColor;
 @property (nonatomic, strong) UIColor *swooshTickColor;
 
+@property (nonatomic, strong) NSMutableArray *ticks;
+@property (nonatomic, strong) NSMutableArray *swooshTicks;
+
 - (id)initWithFrame:(CGRect)frame;
 
 @end
